@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <title>Marvel</title>
+</head>
+
+
+<!--this  is for  upper options -->
+
+
+<body style="background-color:rgb(30, 29, 37)">
+  <center><img src="data:image/png;base64,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" alt="Marvel"  style="width:140px;height:70px;"></center>
+  <header class="text-gray-400 bg-gray-900 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+        
+          <img class="w-10 h-10 rounded-full inline-flex items-center justify-center bg-gray-800 text-gray-600" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMIAAADCCAMAAAAsP+0DAAAAk1BMVEXwFB7////7xcD70s/7xcfyOkLzUE7wGiLxIyrwHyb7ycT7xsDxMjbxLTLxKi///fz0Y2L4nJr1bGz2enrzSUv0ZWbyQ0X0W1v2gH/3jYvyPDz+6+r2c3T4mpP6rqj7zMX4o57+9fX3lJH6s7P94eD7vr3+7uvzVFT3hof81dL1cHD5qKb94+H/9/jzVlj3j5D6s7UKgIGFAAAEuklEQVR4nO2dW1PiQBCFg6IQ5CoaAVlXwAsuXvb//7pdLkkmyVx6tsqdc6qmH3whx8pX6KnpTncnSWLEiBEjRowYMWLEiBEjRhE/emeO6D0YxbOfJtHV6Wfv8fsR3lvu6JrEI7d29f0IZwKEhUE7EGjPvx/hSnAbNwbtAgNB8i2MDdobHoS1QXvNg/Bm0D7yILQ6eq3EzVAQ9K6aSqQoCHpX7TIh3GmlEk+FQZhrpRJDgkHYaKUSQ4JB0N/HMxPCSuuqT0wIrb5G2RGcU4EQLjXKC5ESBmGmUYoMCQdBl7hNuBB6GqXIkHAQXjSWJDIkHITWsCFMRYYEhJA1hDJDAkK4bgjHbAhNV52yIUwawi82hKeGsMeG0Mg9RVknFkL9oNfnQ6hX9CRlMDCEekXvjg+hnj5v+RDqtyI0JCSEWkVPlrKBIVRdVVQGQ0OouqrUU6EQXiuyV0aE6kFPakhQCGf/JkNCGKmWJDYkKISKJYkNCQthoKjEhoSFoB70LjkRpopKbEhYCDtFteFEUCt655wI96Wos+JEUFxV0j8CiVBW9OSGBIZwW4iWrAjlQU/uqWAIZUVvx4pQNMR4GBIYQmFJHoaEhpB3k2S8CPlBT5x14iHkFb1fvAjbk8bDkNAQTge9zgsvwig9SHwMCQ3hVA7zMSQ4hONBz+OQh4dw7NGT9Y+AIhzTZx9DgkN43iu8DAkO4dDgJn3WiYlwOOgNuRH2DTHC/hFUhL2r+pyQABGWiach4SHsvBVwCPuDnmRqARjhXdzQBovw11W9DnmICAu/ExIiwjiZsSNMkzU7wjZpsyNMPA0JEKEtbaXCRbj3vB4QoeX5dxQYQXy3ow9UhJXwueboGRbhYy7Lks9tz60C/y98ygZFdrZKd2CEC1lr+dx28guM0Jc1+C9t86qBEYafIoQbW504MEJXVsO2Xhb6W0hECNYGq8AIAyEC8P9CX7IxpfVmzUVDm2ryIEBYW2cZgiNIEuWx9ZlJcATJA50MG0FSceljIwgK8aMUG0EwTtuzPz8Mj+Cey56hI7iHUe/QEdzjaxk6gru/fICO4Kx87ccasBGcRZr9o2hwhLkDYYuP4Mo9l/gIrhrqKz6CK/cc4CM42moPOz7AERzTFoc7REewP+zfMCDYLWnKgGDPejIGBLslDRkQ7E1gKQNCcm+54jhlBY9gs6QHDoRbyxW3HAi2iumCA8E229zlQOhYrkg5EJI34wWnrUn4CObEbc2CYM56xiwI5lpSxoJgriX1WRCMSy9Osz0ECMaFl+2EBsE0G/zFg2DqdMnXShAgmDpd8g3iBAimx1X51icCBMMAUrG6mgDBsJ6tuDsGBH3itmFC0FtSPjtMgaBP3IptQwwI+sSt2PnEgKCvJaVMCNomgPJ1ABQIuiaAwpA4EHRNAEsuBF3WU35KgaCzpHKHOwWCLnErDIkDQXNKUlaHcSA0p9ke2RCa3dvl2i0ShOYTN2UfIwdC01WVV29xIDSbAJTdpBwIja2R6pv0SBDqlqS+z5AEod69rW5LJkGol7fVNfqBEWzLCNQ9tvVakvouQFvb1X94IeykbY7KgvPf1c9S5aPM8jt2SYwYMWLEiBEjRowYMWLEiIEUfwAh11e+5y2qRgAAAABJRU5ErkJggg==" >
+        <span class="ml-3 text-xl">INSIDER</span>
+      </a>
+      <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+        <a href="https://www.marvel.com/games" class="mr-5 hover:text-red-800">Games</a>
+        <a href="https://www.marvel.com/comics?&options%5Boffset%5D=0&totalcount=12" class="mr-5 hover:text-red-800">Comics</a>
+        <a href="https://www.marvel.com/movies" class="mr-5 hover:text-red-800">Movies</a>
+        <a href="https://www.marvel.com/tv-shows" class="mr-5 hover:text-red-800">TV Shows</a>
+        <a href="https://www.shopdisney.com/marvel-content/?CMP=SYN-MARVELCOM:NAV_MORE" class="mr-5 hover:text-red-800">Shop</a>
+        <a href="https://www.marvel.com/articles" class="mr-5 hover:text-red-800">News</a>
+      </nav>
+      <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-red-700 rounded text-base mt-4 md:mt-0"><a href="https://www.instagram.com/marvelfansin/?hl=en">FAN PAGE</a>
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+
+<!-- this  is  for slide show of img -->
+
+
+        <head>
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <style>
+          * {box-sizing: border-box;}
+          body {font-family: Verdana, sans-serif;}
+          .mySlides {display: none;}
+          img {vertical-align: middle;}
+          
+          /* Slideshow container */
+          .slideshow-container {
+            max-width: 900px;
+            position: relative;
+            margin: auto;
+          }
+          
+          /* Caption text */
+          .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+          }
+          
+          
+          /* The dots/bullets/indicators */
+          .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+          }
+          
+          .active {
+            background-color: #717171;
+          }
+          
+          /* Fading animation */
+          .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+          }
+          
+          @-webkit-keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+          }
+          
+          @keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+          }
+          
+          /* On smaller screens, decrease text size */
+          @media only screen and (max-width: 300px) {
+            .text {font-size: 11px}
+          }
+          </style>
+          </head>
+          <body>
+
+          <div class="slideshow-container">
+          
+          <div class="mySlides fade">
+            
+            <img src="https://wallpapermemory.com/uploads/605/avengers-age-of-ultron-wallpaper-1080p-243046.jpg" style="width:100%">
+            <div class="text">“ Cause if we can't protect the Earth, you can be damn sure we'll avenge it. ” </div>
+          </div>
+          
+          <div class="mySlides fade">
+           
+            <img src="https://c4.wallpaperflare.com/wallpaper/847/276/1017/comic-rocket-guardians-of-the-galaxy-guardians-of-the-galaxy-wallpaper-preview.jpg" style="width:100%">
+            <div class="text">“ That is the most real, authentic, hysterical laugh of my entire life, because that is not a plan! ”</div>
+          </div>
+          
+          <div class="mySlides fade">
+            
+            <img src="https://images8.alphacoders.com/116/thumb-1920-1166926.jpeg" style="width:100%">
+            <div class="text">"  We don’t interfere in their wars. "</div>
+          </div>
+          
+          </div>
+          <br>
+          
+          <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+          </div>
+          
+          <script>
+          var slideIndex = 0;
+          showSlides();
+          
+          function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+          }
+          </script>
+          
+<marquee style="font-family: 'Courier New', Courier, monospace; font-size:60px;color:rgb(206, 40, 40);">  Upcoming   Upcoming   Upcoming    Upcoming  </marquee>
+          </body>
+
+
+          <!--  for img info  display for  3 -->
+
+
+          <section class="text-gray-400 bg-gray-900 body-font">
+            <div class="container px-5 py-24 mx-auto">
+              <div class="flex flex-wrap -m-4">
+                <div class="p-4 md:w-1/3">
+                  <div class="h-full border-2 border-gray-800 rounded-lg overflow-hidden">
+                    <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://sm.ign.com/t/ign_in/news/m/morbius-de/morbius-delayed-to-april-2022_kcnx.280.jpg" alt="morbius">
+                    <div class="p-6">
+                      <h2 class="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">MOVIE</h2>
+                      <h1 class="title-font text-lg font-medium text-white mb-3"> MORBIUS</h1>
+                      <p class="leading-relaxed mb-3">Maxwell Mordius was an ambitious leader of a subgroup of A.I.M. who kidnapped Iron Man in order to recreate the Iron Man Armor and outfit his agents with it.</p>
+                      <div class="flex items-center flex-wrap ">
+                        <a href="https://en.wikipedia.org/wiki/Morbius_(film)" class="text-red-400 inline-flex items-center md:mb-2 lg:mb-0">Know More
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-4 md:w-1/3">
+                  <div class="h-full border-2 border-gray-800 rounded-lg overflow-hidden">
+                    <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcJnPuxA46IT_TT2x72FC9uvZ9tGUc-N-3aaAWjoD2WT5Y5IhL-RPvfv2lX1R-gXcvG-k&usqp=CAU" alt="doctor strange in the multiverse of madness">
+                    <div class="p-6">
+                      <h2 class="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">MOVIE</h2>
+                      <h1 class="title-font text-lg font-medium text-white mb-3">Doctor Strange in the Multiverse of Madness</h1>
+                      <p class="leading-relaxed mb-3">Doctor Strange in the Multiverse of Madness is an upcoming American superhero film based on the Marvel Comics character Doctor Strange. </p>
+                      <div class="flex items-center flex-wrap">
+                        <a href="https://en.wikipedia.org/wiki/Doctor_Strange_in_the_Multiverse_of_Madness" class="text-red-400 inline-flex items-center md:mb-2 lg:mb-0">Know More
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-4 md:w-1/3">
+                  <div class="h-full border-2 border-gray-800 rounded-lg overflow-hidden">
+                    <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://i.ytimg.com/vi/EqW2sVFI474/maxresdefault.jpg" alt="ms. marvel">
+                    <div class="p-6">
+                      <h2 class="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">TV Show</h2>
+                      <h1 class="title-font text-lg font-medium text-white mb-3">Ms. Marvel</h1>
+                      <p class="leading-relaxed mb-3">Ms. Marvel primary super human ability is the power to shape shift. She can transform her body, or parts of it, to aid her exploits. Kamala usually uses this power to elongate her limbs or enlarge her fists.</p>
+                      <div class="flex items-center flex-wrap ">
+                        <a href="https://www.marvel.com/characters/ms-marvel-kamala-khan/in-comics/profile" class="text-red-400 inline-flex items-center md:mb-2 lg:mb-0">Know More
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+<!--  about stan  lee  -->
+
+
+<section class="text-gray-400 bg-gray-900 body-font">
+  <div class="container px-5 py-24 mx-auto flex flex-col">
+    <div class="lg:w-4/6 mx-auto">
+      <div class="rounded-lg h-64 overflow-hidden">
+        <img alt="content" class="object-cover object-center h-full w-full" src="https://static0.srcdn.com/wordpress/wp-content/uploads/2020/12/marvel-comics-stan-lee-tribute-1.jpg">
+      </div>
+      <div class="flex flex-col sm:flex-row mt-10">
+        <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+          <div class="w-21 h-21 rounded-full inline-flex items-center justify-center bg-gray-800 text-gray-600">
+            <img class="w-21 h-21 rounded-full inline-flex items-center justify-center bg-gray-800 text-gray-600" src="data:image/jpeg;base64,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">
+          </div>
+          <div class="flex flex-col items-center text-center justify-center">
+            <h2 class="font-medium title-font mt-4 text-white text-lg">Stan Lee</h2>
+            <div class="w-12 h-1 bg-red-500 rounded mt-2 mb-4"></div>
+            <p class="text-base text-gray-400"> “ With great power comes great responsibility. ” </p>
+          </div>
+        </div>
+        <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-800 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+          <p class="leading-relaxed text-lg mb-4"> Stan Lee (born Stanley Martin Lieber December 28, 1922 – November 12, 2018) was an American comic book writer, editor, publisher, and producer.He was the primary creative leader for two decades, leading its expansion from a small division of a publishing house to a multimedia corporation that dominated the comics and film industries.</p>
+          <a href="https://en.wikipedia.org/wiki/Stan_Lee" class="text-red-400 inline-flex items-center">Know More
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- spider  man  hit   news -->
+
+
+<section class="text-gray-400 bg-gray-900 body-font">
+  <div class="container px-5 py-24 mx-auto flex flex-wrap">
+    <div class="flex flex-wrap -mx-4 mt-auto mb-auto lg:w-1/2 sm:w-2/3 content-start sm:pr-10">
+      <div class="w-full sm:p-4 px-4 mb-6">
+        <h1 class="title-font font-medium text-xl mb-2 text-white">Spider-Man No Way Home</h1>
+        <div class="leading-relaxed">‘Spider-Man: No Way Home’ Leaps To $1.53B WW For No. 8 On All-Time Global Chart – International Box Office
+        <div> "Spider-Man: No Way Home" Box Office Up to $1.54 Billion, Now the 8th Biggest Movie of All Time.</div>
+        </div>
+      </div>
+      <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
+        <h2 class="title-font font-medium text-3xl text-white">8.8/10</h2>
+        <p class="leading-relaxed">IMDb</p>
+      </div>
+      <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
+        <h2 class="title-font font-medium text-3xl text-white">93%</h2>
+        <p class="leading-relaxed">Rotten Tomatoes</p>
+      </div>
+      <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
+        <h2 class="title-font font-medium text-3xl text-white">71%</h2>
+        <p class="leading-relaxed">Metacritic</p>
+      </div>
+    </div>
+    <div class="lg:w-1/2 sm:w-1/3 w-full rounded-lg overflow-hidden mt-6 sm:mt-0">
+      <img class="object-cover object-center w-full h-full" src="https://images.thedirect.com/media/article_full/spider-man-no-way-home-scenes.jpg" alt="stats">
+    </div>
+  </div>
+</section>
+
+
+<!--   how can people contact us  -->
+
+
+<section class="text-gray-400 bg-gray-900 body-font relative">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-col text-center w-full mb-12">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Contact Us</h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">GET REWARDED FOR BEING A MARVEL FAN</p>
+    </div>
+    <div class="lg:w-1/2 md:w-2/3 mx-auto">
+      <div class="flex flex-wrap -m-2">
+        <div class="p-2 w-1/2">
+          <div class="relative">
+            <label for="name" class="leading-7 text-sm text-gray-400">Name</label>
+            <input type="text" id="name" name="name" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-red-500 focus:bg-gray-900 focus:ring-2 focus:ring-red-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          </div>
+        </div>
+        <div class="p-2 w-1/2">
+          <div class="relative">
+            <label for="email" class="leading-7 text-sm text-gray-400">Email</label>
+            <input type="email" id="email" name="email" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-red-500 focus:bg-gray-900 focus:ring-2 focus:ring-red-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          </div>
+        </div>
+        <div class="p-2 w-full">
+          <div class="relative">
+            <label for="message" class="leading-7 text-sm text-gray-400">Message</label>
+            <textarea id="message" name="message" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-red-500 focus:bg-gray-900 focus:ring-2 focus:ring-red-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+          </div>
+        </div>
+        <div class="p-2 w-full">
+          <button class="flex mx-auto text-white bg-red-500 border-0 py-2 px-8 focus:outline-none hover:bg-red-600 rounded text-lg">Submit</button>
+        </div>
+        <div class="p-2 w-full pt-8 mt-8 border-t border-gray-800 text-center">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- social media accounts   -->
+
+
+<footer class="text-gray-400 bg-gray-900 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap md:text-left text-center order-first">
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <nav class="list-none mb-10">     
+         <li>
+            <a href="https://www.marvel.com/corporate/about" class="text-gray-400 hover:text-white">ABOUT MARVEL</a>
+          </li>
+          <li>
+            <a href="https://help.marvel.com/hc/en-us" class="text-gray-400 hover:text-white">HELP/FAQS</a>
+          </li>
+          <li>
+            <a href="https://jobs.disneycareers.com/search-jobs?orgIds=391-1635-24091&ascf=[{%22key%22:%22custom_fields%252EIndustryCustomField%22,%22value%22:%22Marvel%20Entertainment%22}]" class="text-gray-400 hover:text-white">CAREERS</a>
+          </li>
+          <li>
+            <a href="https://www.marvel.com/corporate/interns" class="text-gray-400 hover:text-white">INTERNSHIPS</a>
+          </li>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <nav class="list-none mb-10">
+          <li>
+            <a href="https://www.marvel.com/corporate/advertising" class="text-gray-400 hover:text-white">ADVERTISING</a>
+          </li>
+          <li>
+            <a href="https://www.hotstar.com/in?cid=DTCI-Synergy-Marvel-Site-Acquisition-Library-US-Marvel-NA-EN-NavFooter-Marvel_DisneyPlus_NavFooter_Evergreen-NA" class="text-gray-400 hover:text-white">DISNEY+</a>
+          </li>
+          <li>
+            <a href="https://www.marvelhq.com/" class="text-gray-400 hover:text-white">MARVELHQ.COM</a>
+          </li>
+          <li>
+            <a href="https://www.marvel.com/signin?referer=http%3A%2F%2Fwww.marvel.com%2Fredeem" class="text-gray-400 hover:text-white">REDEEM DIGITAL COMICS</a>
+          </li>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <nav class="list-none mb-10">
+          <li>
+            <a href="https://disneytermsofuse.com/" class="text-gray-400 hover:text-white">Teams of use</a>
+          </li>
+          <li>
+            <a href="https://privacy.thewaltdisneycompany.com/en/" class="text-gray-400 hover:text-white">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="https://www.marvel.com/corporate/insider_terms" class="text-gray-400 hover:text-white">Marvel Insider Terms</a>
+          </li>
+          <li>
+            <a href="https://www.marvel.com/corporate/license_tou" class="text-gray-400 hover:text-white">License Agreement</a>
+          </li>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">NEWSLETTER</h2>
+        <div class="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start">
+          <div class="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2">
+            <label for="footer-field" class="leading-7 text-sm text-gray-400">email</label>
+            <input type="text" id="footer-field" name="footer-field" class="w-full bg-gray-800 rounded border bg-opacity-40 border-gray-700 focus:bg-transparent focus:ring-2 focus:ring-red-900 focus:border-red-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          </div>
+          <button class="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-gray-800 bg-opacity-75">
+    <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+        <img class="w-10 h-10 rounded-full inline-flex items-center justify-center bg-gray-800 text-gray-600" src="data:image/png;base64,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">
+        <span class="ml-3 text-xl">MARVEL UNLIMETED</span>
+      </a>
+      <p class="text-sm text-gray-400 sm:ml-6 sm:mt-0 mt-4">© 2022 MARVEL 
+        <a href="https://twitter.com/marvel" class="text-gray-500 ml-1" target="_blank" rel="noopener noreferrer">@Marvel</a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <a class="ml-3 text-gray-400">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-400">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+      </span>
+    </div>
+  </div>
+</footer>
+</header>
+</body>
+</html>
